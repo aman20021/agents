@@ -2,8 +2,9 @@ from code_saver_tool import save_code_to_file, save_multiple_files
 from google.adk.agents.llm_agent import LlmAgent
 import os
 from agentInteraction import call_agent_async
+from dotenv import load_dotenv
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCNXN009dvWSo6RU70927kvsE_8VjSbuOc"
+load_dotenv(override=False)
 
 # Simple test agent
 test_agent = LlmAgent(

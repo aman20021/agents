@@ -8,7 +8,8 @@ from google.adk.sessions import InMemorySessionService
 from google.adk.runners import Runner
 from google.genai import types
 from agentInteraction import call_agent_async
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCNXN009dvWSo6RU70927kvsE_8VjSbuOc"
+from dotenv import load_dotenv
+load_dotenv(override=False)
 AGENT_MODEL = "gemini-2.5-flash" # Starting with Gemini
 
 

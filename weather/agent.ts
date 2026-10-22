@@ -2,9 +2,6 @@ import 'dotenv/config';
 import { FunctionTool, LlmAgent } from '@google/adk';
 import { z } from 'zod';
 
-
-console.log(process.env.GOOGLE_GENAI_API_KEY);
-
 const getWeather = new FunctionTool({
   name: 'get_weather',
   description: 'Retrieves the current weather report for a specified city.',
