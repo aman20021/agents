@@ -7,8 +7,9 @@ from code_saver_tool import save_code_to_file
 import os
 import json
 import re
+from dotenv import load_dotenv
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCNXN009dvWSo6RU70927kvsE_8VjSbuOc" 
+load_dotenv(override=False) 
 
 # --- Constants ---
 GEMINI_MODEL = "gemini-2.5-flash"

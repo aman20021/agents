@@ -7,8 +7,9 @@ from google.adk.models.lite_llm import LiteLlm # For multi-model support
 from google.adk.sessions import InMemorySessionService
 from google.adk.runners import Runner
 from google.genai import types
+from dotenv import load_dotenv
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCNXN009dvWSo6RU70927kvsE_8VjSbuOc"
+load_dotenv(override=False)
 AGENT_MODEL = "gemini-2.5-flash" # Starting with Gemini
 
 

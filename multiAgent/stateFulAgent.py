@@ -8,7 +8,8 @@ from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.runners import Runner
 from google.adk.tools.tool_context import ToolContext
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCNXN009dvWSo6RU70927kvsE_8VjSbuOc"
+from dotenv import load_dotenv
+load_dotenv(override=False)
 MODEL_GEMINI_2_5_FLASH = "gemini-2.5-flash" # Starting with Gemini
 from agent import say_hello, say_goodbye
 from agentInteraction import call_agent_async
